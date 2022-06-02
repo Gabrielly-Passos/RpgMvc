@@ -26,7 +26,11 @@
  <td>@Html.DisplayFor(modelItem => item.Vitorias)</td>
  <td>@Html.DisplayFor(modelItem => item.Derrotas)</td>
  <td><!--Coluna para Links/botões-->
- @Html.ActionLink("Editar", "Edit", new { id = item.Id } ) |  @Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |  @Html.ActionLink("Deletar", "Delete", new { id = item.Id })  </td>
+    @Html.ActionLink("Editar", "Edit", new { id = item.Id } ) |
+    @Html.ActionLink("Detalhes", "Details", new { id = item.Id } ) |
+    @Html.ActionLink("Deletar", "Delete", new { id = item.Id }
+  , new { onclick = "return confirm('Deseja realmente deletar esse personagem?');"})
+ </td>
  </tr>
  }
 </table>

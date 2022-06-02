@@ -1,5 +1,3 @@
-
-
 namespace RpgMvc.Models.Enums
 {
     public enum ClasseEnum

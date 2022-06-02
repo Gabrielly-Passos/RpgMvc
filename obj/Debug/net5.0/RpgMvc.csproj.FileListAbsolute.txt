@@ -47,3 +47,4 @@ C:\Atividade_DS\RpgMvc\RpgMvc\obj\Debug\net5.0\RpgMvc.Views.pdb
 C:\Atividade_DS\RpgMvc\RpgMvc\obj\Debug\net5.0\RpgMvc.csproj.CopyComplete
 C:\Atividade_DS\RpgMvc\RpgMvc\obj\Debug\net5.0\RpgMvc.genruntimeconfig.cache
 C:\Atividade_DS\RpgMvc\RpgMvc\obj\Debug\net5.0\Razor\Views\Personagens\Details.cshtml.g.cs
+C:\Atividade_DS\RpgMvc\RpgMvc\obj\Debug\net5.0\Razor\Views\Personagens\Edit.cshtml.g.cs
