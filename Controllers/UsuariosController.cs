@@ -63,7 +63,7 @@ namespace RpgMvc.Controllers
         {
             try{
                 
-                 HttpClient httpClient = new HttpClient();
+                HttpClient httpClient = new HttpClient();
                 string uriComplementar = "Autenticar";
 
                 var content = new StringContent(JsonConvert.SerializeObject(u));
@@ -93,6 +93,41 @@ namespace RpgMvc.Controllers
             }
 
         }
+
+       /* [HttpGet]
+
+        public async Task<ActionResult> DetailAsync(int? id)
+
+        {
+            try{
+
+                HttpClient httpClient = new HttpClient();
+                string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                httpClient.DefaulRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                HttpResponseMessage response = await httpClient.GetAsync(uriBase + id.ToString());
+                string Serialized = await response.Content.ReadAsStringAsync();
+               
+                 if(response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    PersonagemViewModel p= await Task.Run(() =>
+                    JsonConvert.DeserializeObject<PersonagemViewModel>(Serialized) );
+                    return View(p);
+                }
+                else
+                {
+                    throw new System.Exception(Serialized);
+                }
+               
+            }
+             catch (System.Exception ex)
+            {
+               TempData["MensagemErro"] = ex.Message;
+                return RedirectToAction("Index");
+
+            }
+
+
+        }*/
 
 
 

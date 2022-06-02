@@ -1,7 +1,8 @@
-@model RpgMvc.Models.PersonagemViewModel]
+@model RpgMvc.Models.PersonagemViewModel
+
 
 @{
-    viewBag.Title= "Novo Personagem";
+    ViewBag.Title= "Novo Personagem";
 
 <!--Insira aqui os TempData de Sucesso e Erro para evitar tela de morte -->
 <h2>Criar  um novo personagem</h2>
@@ -11,7 +12,7 @@
     <div class="form-horizontal">
     <hr/>
     <div class="form-group">
-    @Html.LabelFor(Model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2"})
+    @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2"})
     <div class="col-md-6">
     @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control"}})
     </div>
